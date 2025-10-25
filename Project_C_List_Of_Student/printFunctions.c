@@ -1,4 +1,15 @@
-#include "header.h"
+#include "printFunctions.h"
+
+void printTitle() {
+	char row = 196, col = 179;
+	char* cours1 = "c lang", * cours2 = "Computer Networks", * cours3 = "CS Fundamentals", * average = "Average";
+	char* ID = "ID", * secondName = "second name", * firstName = "first name", * warnings = "Warnings";
+	printf("%10cgrades options : -1 = No grade, -2 = Invalid grade\n", ' ');
+	printRowToConsole();
+	printf("%10c%-3s%c%-12s%c%-12s%-5c%-6s%c", col, "num", col, firstName, col, secondName, col, ID, col);
+	printf("%-7s%c%-18s%c%-16s%c%-8s%-7c%-17s\n", cours1, col, cours2, col, cours3, col, average, col, warnings);
+	printRowToConsole();
+}
 
 void printIntroduction() {
 	printf("\n%10cintroduction\n", ' ');
@@ -10,17 +21,6 @@ void printIntroduction() {
 	printf("%10c4. remove : Remove student by ID. example -> \"remove 123456789\"\n", ' ');
 	printf("%10c5. quit : Quit from the software and save information. exampel -> \"quit\"\n", ' ');
 
-}
-
-void printTitle() {
-	char row = 196, col = 179;
-	char* cours1 = "c lang", * cours2 = "Computer Networks", * cours3 = "CS Fundamentals", * average = "Average";
-	char* ID = "ID", * secondName = "second name", * firstName = "first name", * warnings = "Warnings";
-	printf("%10cgrades options : -1 = No grade, -2 = Invalid grade\n", ' ');
-	printRowToConsole();
-	printf("%10c%-3s%c%-12s%c%-12s%-5c%-6s%c", col, "num", col, firstName, col, secondName, col, ID, col);
-	printf("%-7s%c%-18s%c%-16s%c%-8s%-7c%-17s\n", cours1, col, cours2, col, cours3, col, average, col, warnings);
-	printRowToConsole();
 }
 
 void printListToConsole(List* list) {
@@ -55,7 +55,7 @@ void printRowToConsole() {
 }
 
 void printStudentToConsole(Student* stud, int num) {
-	ARRAY_OF_NAME_COURSES;/*Creat array of courses name*/
+	char* arrNameCourses[] = ARRAY_OF_NAME_COURSES;/*Creat array of courses name*/
 	char row = 196, col = 179;/*to print row and column*/
 
 	printf("%10c%-3d%c%-12s%c%-12s%c%-10s%-3c", col, num, col, stud->firstName, col, stud->secondName, col, stud->ID, col);
@@ -74,9 +74,8 @@ void printStudentToConsole(Student* stud, int num) {
 	printRowToConsole();
 }
 
-void* errorMessge(char* strError) {
-	printf("%s\n", strError);
-	return NULL;
-}
+
+
+
 
 

@@ -18,21 +18,45 @@
     <ClCompile Include="Source.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BoolFunctions.c">
+    <ClCompile Include="validator.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="listFunctions.c">
+    <ClCompile Include="studentsListFunctions.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Main.c">
+    <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="printFunctions.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="generalFunction.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmpFunctions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h">
+    <ClInclude Include="printFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="studentList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generalFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="validator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmpFunctoins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
